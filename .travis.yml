@@ -28,7 +28,7 @@ before_install:
   - make update-dependencies
 
 script:
-  - sudo bash ./check-qemu.sh
+  #- sudo bash ./check-qemu.sh
   - make $TEST_TARGET
 
 jobs:
