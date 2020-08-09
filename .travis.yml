@@ -16,7 +16,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get -y install docker-ce
   - export DOCKER_CLI_EXPERIMENTAL=enabled
-  - sudo apt-get install -y qemu-user-static binfmt-support qemu-kvm qemu-system-*
+  - sudo apt-get install -y qemu-user-static binfmt-support qemu-kvm qemu-user qemu-system-* 
   - docker run --rm --privileged multiarch/qemu-user-static --reset -p
   - docker buildx create --name multibuilder
   - docker buildx use multibuilder
