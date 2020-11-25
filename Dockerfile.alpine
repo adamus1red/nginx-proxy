@@ -1,4 +1,4 @@
-FROM library/nginx:1.19.4-alpine
+FROM library/nginx:1.19.5-alpine
 LABEL maintainer="Jason Wilder mail@jasonwilder.com"
 
 # Install wget and install/updates certificates
